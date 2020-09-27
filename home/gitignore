@@ -1,0 +1,63 @@
+# MacOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+STDOUT
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+.idea/
+
+# IDE Components
+.vscode/
+
+.idea/
+*.iml
+
+# Tooling
+.chef/
+.kitchen/
+.vagrant/
+berks-cookbooks/
+
+.rakeTasks
+*.lock
+
+.python-version
+.ruby-version
+
+# Misc
+._*
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+*.log
+
+*.pem

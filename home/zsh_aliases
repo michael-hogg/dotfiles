@@ -1,0 +1,26 @@
+alias zsh-config="$EDITOR $HOME/.zshrc"
+alias zsh-alias-config="$EDITOR $HOME/.zsh_aliases"
+alias brew-bundle-dump="brew bundle dump --global -f"
+alias update="omz update && \
+              brew upgrade && \
+	          brew update && \
+              brew bundle install --global && \
+              brew bundle cleanup --force --global && \
+              gpg --refresh-keys"
+alias ks="knife status"
+alias cat="ccat"
+alias ca="/bin/cat"
+alias gist="gist -p"
+alias git="noglob git"
+alias git-config="$EDITOR $HOME/.gitconfig"
+alias git-ignore-config="$EDITOR $HOME/.gitignore"
+alias wmip="curl ipv4.icanhazip.com"
+alias aws-config="$EDITOR $HOME/.aws/config"
+alias aws-creds="$EDITOR $HOME/.aws/credentials"
+alias aws-ssh="aws ssm start-session --target"
+alias aws-whoami="aws sts get-caller-identity"
+alias chef-activate-env="eval $(chef shell-init zsh)"
+alias kitchen-config="$EDITOR $HOME/.kitchen/config.yml"
+alias reset-gpg-agent="gpg-connect-agent updatestartuptty /bye"
+alias py-2="pyenv activate 2"
+alias py-3="pyenv activate 3"

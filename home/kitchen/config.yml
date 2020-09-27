@@ -1,0 +1,29 @@
+---
+driver:
+  name: ec2
+  region: eu-west-1
+  shared_credentials_profile: default 
+  instance_type: m3.large 
+  subnet_filter:
+    tag:   Name
+    value: test-kitchen-sn
+  security_group_filter:
+    tag:   Name
+    value: test-kitchen-sg
+  tags:
+    Name:  mh-test-kitchen
+    Owner: Michael Hogg
+
+transport:
+    max_threads: 5
+    connection_timeout: 10
+    connection_retries: 36
+    connection_retry_sleep: 10
+    max_wait_until_ready: 1200
+    winrm_transport: ssl
+
+verifier:
+  name: inspec
+  reporter:
+  - cli
+  - junit:.kitchen/results/%{platform}_%{suite}_inspec.xml

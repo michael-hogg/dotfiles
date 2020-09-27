@@ -1,0 +1,82 @@
+# Path
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+
+# Go
+export GOPATH=$HOME/.go
+export GOROOT="$(brew --prefix golang)/libexec"
+
+# Zsh
+export ZSH=$HOME/.oh-my-zsh
+export ZSH_CUSTOM=$HOME/.zsh/custom
+
+export TERM=xterm-256color
+
+export EDITOR=vim
+
+export HOMEBREW_NO_INSECURE_REDIRECT=1
+export HOMEBREW_NO_ANALYTICS=1
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+export CHEF_LICENSE=accept-silent
+
+# Test Kitchen
+export KITCHEN_YAML=.kitchen.yml
+export KITCHEN_LOCAL_YAML=$HOME/.kitchen/config.yml
+
+ZSH_THEME="bullet-train"
+
+BULLETTRAIN_CUSTOM_MSG=""
+BULLETTRAIN_VIRTUALENV_DEFAULT_NAME="system"
+BULLETTRAIN_CONTEXT_DEFAULT_USER=mh
+BULLETTRAIN_VIRTUALENV_FG=black
+BULLETTRAIN_DIR_BG=black
+BULLETTRAIN_DIR_FG=white
+BULLETTRAIN_GIT_BG=white
+BULLETTRAIN_GIT_FG=black
+BULLETTRAIN_EXEC_TIME_BG=black
+BULLETTRAIN_EXEC_TIME_FG=white
+BULLETTRAIN_AWS_BG=blue
+BULLETTRAIN_STATUS_EXIT_SHOW=true
+
+HYPHEN_INSENSITIVE=true
+DISABLE_AUTO_TITLE=true
+COMPLETION_WAITING_DOTS=true
+SHOW_AWS_PROMPT=false
+
+fpath=(
+  /usr/local/share/zsh-completions
+  $fpath
+)
+
+plugins=(
+  zsh_reload
+  gpg-agent
+  sudo
+  git
+  pip
+  mvn
+  docker
+  docker-compose
+  vagrant
+  vault
+  terraform
+  inspec
+  aws
+  knife
+  kitchen  
+  pyenv
+  rbenv
+)
+
+source $ZSH/oh-my-zsh.sh
+
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+
+. $HOME/.zsh_aliases
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault

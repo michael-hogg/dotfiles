@@ -1,0 +1,24 @@
+syntax on
+
+let mapleader = ","
+
+set number relativenumber
+set laststatus=2
+
+set wildmenu
+set wildmode=longest:full,full
+
+set undofile
+set undodir=$HOME/.vim/undo
+
+set directory=$HOME/.vim/swap
+
+set incsearch
+set hlsearch
+
+nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
+
+" Move line up/down
+map - ddp
+map _ ddkP
+map _ ddkP

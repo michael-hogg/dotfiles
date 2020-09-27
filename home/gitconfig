@@ -1,0 +1,24 @@
+[user]
+	name = michael-hoggg
+	signingkey = F04FA35EE6B5045E 
+
+[includeIf "gitdir:~/Projects/cloudreach/"]
+    path = ~/.gitconfig-cloudreach
+[includeIf "gitdir:~/Projects/personal/"]
+    path = ~/.gitconfig-personal
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[diff]
+    tool = vimdiff
+[mergetool]
+	prompt = false
+	keepBackup = false
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[commit]
+	gpgsign = true
+[pull]
+	rebase = false
