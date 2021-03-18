@@ -26,6 +26,11 @@ export CHEF_LICENSE=accept-silent
 export KITCHEN_YAML=.kitchen.yml
 export KITCHEN_LOCAL_YAML=$HOME/.kitchen/config.yml
 
+# PyEnv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 ZSH_THEME="bullet-train"
 
 BULLETTRAIN_CUSTOM_MSG=""

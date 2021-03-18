@@ -14,14 +14,6 @@ driver:
     Name:  mh-test-kitchen
     Owner: Michael Hogg
 
-transport:
-    max_threads: 5
-    connection_timeout: 10
-    connection_retries: 36
-    connection_retry_sleep: 10
-    max_wait_until_ready: 1200
-    winrm_transport: ssl
-
 verifier:
   name: inspec
   reporter:
