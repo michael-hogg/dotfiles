@@ -1,3 +1,5 @@
+# HomeBrew Dependencies
+
 brew "p7zip"
 brew "openssl"
 brew "python"
@@ -37,11 +39,11 @@ brew "watch"
 brew "wget"
 brew "ykman"
 brew "zsh"
-#brew "zsh-completions"
+brew "zsh-completions"
 brew "aws/tap/aws-sam-cli"
-#brew "dkanejs/aws-session-manager-plugin/aws-session-manager-plugin"
 brew "kwilczynski/pkenv/pkenv"
 
+# Casks
 cask "1password"
 cask "atom"
 cask "chefdk"
@@ -68,8 +70,8 @@ cask "visual-studio-code"
 cask "whatsapp"
 cask "yubico-yubikey-manager"
 
+# Taps
 tap "aws/tap"
-tap "caskroom/cask"
 tap "dkanejs/aws-session-manager-plugin"
 tap "homebrew/bundle"
 tap "homebrew/cask"
