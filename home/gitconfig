@@ -1,6 +1,6 @@
 [user]
 	name = michael-hoggg
-	signingkey = F04FA35EE6B5045E 
+	signingkey = 0x6DF63CA1E40AF18B
 
 [includeIf "gitdir:~/Projects/cloudreach/"]
     path = ~/.gitconfig-cloudreach
